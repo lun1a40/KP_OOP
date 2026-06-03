@@ -1,0 +1,15 @@
+[
+  { "id": 1, "assetId": 1, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 1, "date": "2022-03-15", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 2, "assetId": 2, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 1, "date": "2023-09-01", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 3, "assetId": 3, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 2, "date": "2021-06-10", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 4, "assetId": 4, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 1, "date": "2010-01-01", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 5, "assetId": 5, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 3, "date": "2014-05-20", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 6, "assetId": 6, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 3, "date": "2023-02-01", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 7, "assetId": 7, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 3, "date": "2022-11-15", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 8, "assetId": 8, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 4, "date": "2024-01-10", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 9, "assetId": 9, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 4, "date": "2023-07-01", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 10, "assetId": 10, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 5, "date": "2023-04-01", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 11, "assetId": 11, "type": "Acquired", "fromDepartmentId": null, "toDepartmentId": 6, "date": "2022-08-15", "note": "Поступление на учёт", "performedBy": "admin" },
+  { "id": 12, "assetId": 1, "type": "Transferred", "fromDepartmentId": 2, "toDepartmentId": 1, "date": "2026-02-12", "note": "Возврат на участок литья", "performedBy": "admin" },
+  { "id": 13, "assetId": 3, "type": "SentToRepair", "fromDepartmentId": null, "toDepartmentId": null, "date": "2026-05-20", "note": "Засор форсунок покрасочной линии", "performedBy": "admin" }
+]
