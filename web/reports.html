@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyFactoryAssets — Отчёты</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="/index.html">Toy<span>Factory</span>Assets</a>
+            <nav class="menu">
+                <a href="index.html">Дашборд</a>
+                <a href="assets.html">Фонды</a>
+                <a href="reports.html">Отчёты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Отчёты</h1>
+        <p class="subtitle">Амортизация и движение фондов</p>
+
+        <div id="error-box" class="notice error hidden"></div>
+
+        <div class="toolbar">
+            <div class="field">
+                <label>Амортизация на дату</label>
+                <input id="on-date" type="date">
+            </div>
+            <button class="btn primary" id="btn-depreciation">Сформировать</button>
+            <button class="btn" id="btn-csv">Экспорт в CSV</button>
+        </div>
+
+        <h2 style="font-size:18px;">Амортизация и остаточная стоимость</h2>
+        <div class="table-wrap" style="margin-bottom:28px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Инв. №</th>
+                        <th>Наименование</th>
+                        <th>Категория</th>
+                        <th class="num">Первонач. ст-ть</th>
+                        <th class="num">Амортизация</th>
+                        <th class="num">Остаточная ст-ть</th>
+                    </tr>
+                </thead>
+                <tbody id="depreciation-body"></tbody>
+            </table>
+        </div>
+
+        <h2 style="font-size:18px;">Свод по подразделениям</h2>
+        <div class="table-wrap" style="margin-bottom:28px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Подразделение</th>
+                        <th class="num">Кол-во фондов</th>
+                        <th class="num">Остаточная стоимость</th>
+                    </tr>
+                </thead>
+                <tbody id="by-dept-body"></tbody>
+            </table>
+        </div>
+
+        <h2 style="font-size:18px;">Производственные мощности по видам игрушек</h2>
+        <div class="table-wrap" style="margin-bottom:28px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Вид игрушки</th>
+                        <th class="num">Линий</th>
+                        <th class="num">Суммарная производительность, игрушек/ч</th>
+                    </tr>
+                </thead>
+                <tbody id="capacity-body"></tbody>
+            </table>
+        </div>
+
+        <div class="toolbar">
+            <div class="field">
+                <label>Движения с</label>
+                <input id="from-date" type="date">
+            </div>
+            <div class="field">
+                <label>по</label>
+                <input id="to-date" type="date">
+            </div>
+            <button class="btn primary" id="btn-movements">Показать движения</button>
+        </div>
+
+        <h2 style="font-size:18px;">Журнал движений за период</h2>
+        <div id="movements-totals" class="subtitle"></div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Фонд (id)</th>
+                        <th>Тип</th>
+                        <th>Откуда</th>
+                        <th>Куда</th>
+                        <th>Примечание</th>
+                    </tr>
+                </thead>
+                <tbody id="movements-body"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/reports.js"></script>
+</body>
+</html>

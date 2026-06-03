@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyFactoryAssets — Дашборд</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="/index.html">Toy<span>Factory</span>Assets</a>
+            <nav class="menu">
+                <a href="index.html">Дашборд</a>
+                <a href="assets.html">Фонды</a>
+                <a href="reports.html">Отчёты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Дашборд</h1>
+        <p class="subtitle">Учёт основных фондов фабрики игрушек — сводка на сегодня</p>
+
+        <div id="error-box" class="notice error hidden"></div>
+
+        <div class="cards" id="cards"></div>
+
+        <h2 style="margin-top:32px;font-size:18px;">Структура по категориям</h2>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Категория</th>
+                        <th class="num">Количество</th>
+                        <th class="num">Первоначальная стоимость</th>
+                        <th class="num">Остаточная стоимость</th>
+                    </tr>
+                </thead>
+                <tbody id="by-category"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>
