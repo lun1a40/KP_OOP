@@ -1,0 +1,15 @@
+# Сборка
+build/
+out/
+bin/
+obj/
+*.o
+*.exe
+
+# Visual Studio
+.vs/
+*.user
+
+# macOS
+.DS_Store
+**/.DS_Store

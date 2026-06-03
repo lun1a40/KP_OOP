@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    image: toyfactoryassets
+    container_name: toyfactoryassets
+    ports:
+      - "8080:8080"
+    volumes:
+      # data/ монтируется с хоста — изменения фондов переживают пересоздание контейнера
+      - ./data:/app/data
+    restart: unless-stopped

@@ -1,0 +1,8 @@
+build/
+.git/
+.DS_Store
+**/.DS_Store
+docs/
+*.md
+ToyFactoryAssets.sln
+*.vcxproj*
